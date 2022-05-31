@@ -1,4 +1,4 @@
-Tare programada #2
+Tarea programada #2
 Marcel Castro Grey, B91839
 
 Para compilar el código:
