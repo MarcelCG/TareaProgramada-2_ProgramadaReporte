@@ -1,0 +1,16 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/mnt/c/Users/admin/Documents/ProgramadaReporte'
+mkdir -p bin
+g++ -g -c --std=c++17 src/empleado.cpp -o bin/empleado.o
+g++ -g -c --std=c++17 src/empresa.cpp -o bin/empresa.o
+g++ -g -c --std=c++17 src/main.cpp -o bin/main.o
+g++ -g -c --std=c++17 src/horasTrabajadas.cpp -o bin/horasTrabajadas.o
+g++ -g -c --std=c++17 src/nomina.cpp -o bin/nomina.o
+g++ -g -c --std=c++17 src/controladorNomina.cpp -o bin/controladorNomina.o
+g++ -g -c --std=c++17 src/controladorProfesionalHoras.cpp -o bin/controladorProfesionalHoras.o
+cp ./personas.txt ./bin/personas.txt
+cp ./nomina.txt ./bin/nomina.txt
+cp ./horastrabajadas.txt ./bin/horastrabajadas.txt
+g++ -g -o bin/programadareporte bin/empresa.o bin/main.o bin/empleado.o bin/nomina.o bin/horasTrabajadas.o bin/controladorNomina.o bin/controladorProfesionalHoras.o
+make: Leaving directory '/mnt/c/Users/admin/Documents/ProgramadaReporte'
+ 
